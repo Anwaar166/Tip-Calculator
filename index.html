@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://play-lh.googleusercontent.com/XjhI9eGA0L3aNPXNYv82Ahn0hiQypXXQJaHmIKnUqBeBvdhIbpzyQJ2aamvuusrcXyTM=w240-h480-rw">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Tip Calculator</h3>
+        </div>
+        <form action="">
+            <div id="MainInput"></div>
+            <div class="Input1 input">
+                <p>Enter your bill Amount</p>
+                <div class="inputFeild">
+                    <h3>Rs.</h3><input class="AllInputs" type="number" id="amount" placeholder="Enter Amount">
+                </div>
+            </div>
+            <div class="Input2 input">
+                <p>Select option, you want to pay Tip!</p>
+                <div class="inputFeild">
+                    <h3>Rs.</h3><select class="AllInputs" name="" id="selectTag">
+                        <option value="choice" hidden disabled selected>---Choose an option---</option>
+                        <option value="Outstanding">15% - Outstanding</option>
+                        <option value="Good">10% - Good</option>
+                        <option value="Ok">5% - It's Ok</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="Input3 input">
+                <p>How many people are sharing the bill?</p>
+                <div class="inputFeild">
+                    <h3>Rs.</h3><input id="InputPeople" type="number" class="AllInputs"
+                        placeholder="Enter number of people">
+                </div>
+            </div>
+        </form>
+        <button id="btn" class="button">Calculate!</button>
+        <div class="tip-box" id="tipBox1">
+            <h2>TIP AMOUNT</h2>
+            <p><span>Rs.</span> <strong id="tipAmount"></strong></p>
+            <small>each</small>
+        </div>
+        <div id="tipBox2">
+            <p>Total Tip Amount is=<strong id="totalAmount"></strong></p>
+        </div>
+        <button id="btn2" class="button">Print</button>
+    </div>
+     <div class="printBox" style="display: none;">
+        </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
